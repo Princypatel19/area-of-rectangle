@@ -1,0 +1,33 @@
+public class Area {
+    private double length;
+    private double breadth;
+
+    // Method to set the dimensions of the rectangle
+    public void setDim(double length, double breadth) {
+        this.length = length;
+        this.breadth = breadth;
+    }
+
+    // Method to calculate and return the area of the rectangle
+    public double getArea() {
+        return this.length * this.breadth;
+    }
+
+    public static void main(String[] args) {
+        // Creating an instance of the Area class
+        Area rectangle = new Area();
+        
+        // Setting the dimensions of the rectangle
+        rectangle.setDim(5.0, 3.0);
+
+        // Getting and printing the area of the rectangle
+        double area = rectangle.getArea();
+        System.out.println("The area of the rectangle is: " + area);
+    }
+}
+
+
+
+Output:
+
+The area of the rectangle is: 15.0
