@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Addition {
+    private int num1;
+    private int num2;
+
+    // Constructor to initialize numbers using Scanner
+    public Addition() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the first number: ");
+        this.num1 = scanner.nextInt();
+
+        System.out.print("Enter the second number: ");
+        this.num2 = scanner.nextInt();
+    }
+
+    // Method to add the numbers
+    public int add() {
+        return num1 + num2;
+    }
+
+    // Main method to test the addition
+    public static void main(String[] args) {
+        Addition addition = new Addition();
+        int result = addition.add();
+        System.out.println("The sum of " + addition.num1 + " and " + addition.num2 + " is: " + result);
+    }
+}
+
+
+OUTPUT:
+
+Enter the first number: 5
+Enter the second number: 2
+
+The sum of 5 and 2 is: 7
