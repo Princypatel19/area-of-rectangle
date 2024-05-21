@@ -1,0 +1,33 @@
+public class Addition {
+    private int num1;
+    private int num2;
+
+    // Default constructor
+    public Addition() {
+        this.num1 = 0;
+        this.num2 = 0;
+    }
+
+    // Method to set the numbers
+    public void setNumbers(int num1, int num2) {
+        this.num1 = num1;
+        this.num2 = num2;
+    }
+
+    // Method to add the numbers
+    public int add() {
+        return num1 + num2;
+    }
+
+    // Main method to test the addition
+    public static void main(String[] args) {
+        Addition addition = new Addition();
+        addition.setNumbers(5, 10);
+        int result = addition.add();
+        System.out.println("The sum of " + addition.num1 + " and " + addition.num2 + " is: " + result);
+    }
+}
+
+output:
+
+The sum of 5 and 10 is :15
